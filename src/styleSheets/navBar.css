@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navBars{
+    background-color: rgb(247, 171, 31);
+    display: flex;
+    justify-content: space-around;
+}
+.navBars div h2{
+    color: #fff;
+    padding: 5px;
+}
+.navBars ul{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.navBars ul li{
+    list-style: none;
+    margin-left: 40px;
+}
+.navBars ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform:uppercase;
+}
+.navBars ul li a::after{
+    margin-top: 2px;
+    height: 3px;
+    content: "";
+    display: block;
+    background-color:#fff;
+    margin: auto;
+    width: 0;
+    transition: all 0.5s;
+}
+.navBars ul li:hover a::after{
+    margin-top: 2px;
+    width: 100%;
+    cursor:pointer;
+}
